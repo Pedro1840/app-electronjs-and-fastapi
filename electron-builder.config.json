@@ -1,0 +1,25 @@
+{
+
+    "appId" : "",
+    "productName": "Data Convert",
+    "copyright" : "Copyright ©",
+    
+    "extraFiles" :{
+        "from" : "api/dist/",
+        "to" : "lib/",
+        "filter": ["**/**"]
+    },
+    
+    
+    "directories":{
+        "output": "dist"
+    },
+    "win":{
+        "target":"nsis",
+        "icon":"app/assets/media/icon/app.ico"
+    },
+    "nsis":{
+        "oneClick"   : false,
+        "allowToChangeInstallationDirectory": true
+    }
+    }

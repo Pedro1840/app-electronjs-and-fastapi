@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "description": "ElectronJS frontend and Python Backend",
+  "main": "app/public/main.js",
+  "scripts": {
+    "py-install": "pip install -r requirements.txt",
+    "py-build": "pyinstaller --workpath=engine/build --distpath=engine/dist api.spec",
+    "electron-dev": "electron .",
+    "electron-build": "electron-builder --config electron-builder.config.json"
+  },
+  "author": "pedro.souza",
+  "license": "MIT",
+  "devDependencies": {
+    "axios": "^1.6.8",
+    "electron": "^30.0.1",
+    "electron-builder": "^24.13.3",
+    "electron-reloader": "^1.2.3",
+    "python-shell": "5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "electron-is-dev": "^3.0.1"
+  }
+}
